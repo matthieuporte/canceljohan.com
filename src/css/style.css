@@ -1,0 +1,106 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.center{
+    text-align: center;
+}
+.clickarea{
+    background-image: url("../images/johan.jpg");
+    width: 560px;
+    height: calc(100vh - 108px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: calc(50vw - 280px);
+    margin-right: calc(50vw - 280px);
+}
+
+@media (max-width : 700px){
+    .clickarea{
+        margin-left: 1em;
+        margin-right: 1em;
+        width: auto;
+        height: 700px;
+    }
+}
+.button {
+    align-items: center;
+    border: 1px solid #DFDFDF;
+    border-radius: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 28px;
+    max-width: 100%;
+    padding: 14px 22px;
+    text-decoration: none;
+    transition: all .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: calc(100% - 200px);
+    margin-left: 100px;
+    margin-right:100px;
+}
+
+.button:active,
+.button:hover {
+    outline: 0;
+}
+
+.freejohantbn:hover {
+    background-color: #FFFFFF;
+    border-color: rgba(0, 0, 0, 0.19);
+}
+
+
+.canceljohanbtn:hover {
+    background-color: black;
+    border-color: rgba(255, 255,255, 0.19);
+}
+
+.counter{
+}
+
+p{
+    margin: 0;
+}
+
+.count{
+    text-align: center;
+    font-size: 6em;
+    padding-top: 42.5%;
+    padding-bottom: 42.5%;
+}
+
+.freejohantbn{
+    background-color: lightgreen;
+    color:black;
+}
+.canceljohanbtn{
+    background-color: darkred;
+    color: white;
+    margin-top: 10%;
+}
+
+@media (min-width: 768px) {
+    .button {
+        font-size: 20px;
+        min-width: 200px;
+        padding: 14px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right:20px;
+    }
+    .count{
+        font-size: 3em;
+    }
+}
+
